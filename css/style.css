@@ -1,0 +1,1543 @@
+/* Reset and base styles  */
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  /*outline: none;*/
+}
+
+a:focus,
+a:active {
+  /* outline: none;*/
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+  /* color: inherit; */
+  text-decoration: none;
+  /* display: inline-block; */
+}
+
+a:hover {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Bold/Roboto.woff") format("woff"), url("../fonts/Roboto/Bold/Roboto.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Medium/Roboto.woff") format("woff"), url("../fonts/Roboto/Medium/Roboto.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Light/Roboto.woff") format("woff"), url("../fonts/Roboto/Light/Roboto.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto/Regular/Roboto.woff") format("woff"), url("../fonts/Roboto/Regular/Roboto.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.g-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+  max-width: 1920px;
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #011F3A;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 15px;
+  background: rgba(171, 168, 168, 0.687);
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.489);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.header__logo {
+  max-width: 180px;
+  min-width: 30px;
+  padding: 5px 0;
+  width: 100%;
+  margin-right: 100px;
+  margin-left: 15px;
+  transition: 1s;
+}
+
+.header__logo:hover {
+  transform: rotate(360deg);
+}
+
+.header__menu {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__menu-list {
+  margin-right: 25px;
+}
+
+.header__menu-list:last-child {
+  margin-right: 0;
+}
+
+.header__menu-list a {
+  white-space: nowrap;
+  color: black;
+  font-family: "Roboto";
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.header__menu-list a:hover {
+  color: rgb(118, 27, 145);
+  font-size: 30px;
+}
+
+.section__about {
+  margin-top: 30px;
+}
+
+.section__about-img {
+  background: url(../images/dabllast.webp);
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 418px;
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.489);
+  border-radius: 20px;
+}
+
+.section__about-text {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.section__about-text h1 {
+  padding: 5px 10px;
+  margin-top: 15px;
+  font-family: "Roboto";
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 10px;
+  background-color: rgba(64, 63, 63, 0.687);
+}
+
+.section__about-text .text-info-repair {
+  margin-top: 15px;
+  font-family: "Roboto";
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: 500;
+  background-color: rgba(64, 63, 63, 0.687);
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
+.section__about-text .text-info-repair a {
+  color: white;
+}
+
+.text-info-acii {
+  margin-top: 15px;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgba(64, 63, 63, 0.687);
+  padding: 5px 10px;
+  color: #ffffff;
+}
+
+.text-info-acii a {
+  color: white;
+  transition: 0.5s;
+}
+
+.text-info-acii a:hover {
+  color: black;
+}
+
+.repair {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 140px;
+  margin-top: 25px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background-color: rgba(64, 63, 63, 0.687);
+  padding: 15px;
+  border: 1px solid white;
+  box-shadow: 0px 4px 14px 17px rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.repair:hover {
+  background-color: rgb(118, 27, 145);
+  cursor: pointer;
+}
+
+.button-service {
+  max-width: 550px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.button-service a {
+  display: flex;
+}
+
+.button-service a img {
+  max-width: 40px;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+  background: none;
+  padding-right: 10px;
+}
+
+.repair-iphone {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.25);
+  background-color: rgba(171, 168, 168, 0.687);
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.repair-iphone:hover {
+  background-color: rgb(118, 27, 145);
+  cursor: pointer;
+}
+
+.repair-iphone img {
+  max-height: 35px;
+}
+
+.repair-mackboock {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #ffffff;
+  font-size: 30px;
+  margin-top: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.25);
+  background-color: rgba(171, 168, 168, 0.687);
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.repair-mackboock:hover {
+  background-color: rgb(118, 27, 145);
+  cursor: pointer;
+}
+
+.repair-mackboock img {
+  max-height: 35px;
+}
+
+.repair-watch {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.25);
+  background-color: rgba(171, 168, 168, 0.687);
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.repair-watch:hover {
+  background-color: rgb(118, 27, 145);
+  cursor: pointer;
+}
+
+.repair-watch img {
+  max-height: 35px;
+}
+
+.repair-ipad {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #fffefe;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: rgba(171, 168, 168, 0.687);
+  padding: 15px;
+  border: 1px solid white;
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.25);
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.repair-ipad:hover {
+  background-color: rgb(118, 27, 145);
+  cursor: pointer;
+}
+
+.repair-ipad img {
+  max-height: 35px;
+}
+
+.main__slider {
+  padding: 0 15px;
+  height: 500px;
+  position: relative;
+  font-size: 14px;
+  color: #000;
+  padding: 0;
+  margin-top: 30px;
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.489);
+  border-radius: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: rgba(171, 168, 168, 0.687);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  padding: 15px 15px;
+  max-width: 800px;
+  max-height: 500px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.text-about-apple {
+  max-width: 300px;
+  max-height: 500px;
+  overflow-x: scroll;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.text-about-remont {
+  max-width: 300px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.693);
+  border-radius: 20px;
+}
+
+.text-about-ofice {
+  max-width: 300px;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.693);
+  border-radius: 20px;
+}
+
+.section__repair-all {
+  margin-top: 30px;
+  border-radius: 20px;
+  background: rgba(171, 168, 168, 0.687);
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.489);
+}
+
+.repair-all-title {
+  padding-top: 20px;
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.repair-all-subtitle {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.wrap-tabs-repair {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-top: 15px;
+  background-color: #ffffff;
+  padding-left: 50px;
+  border-radius: 20px 20px 0 0;
+}
+
+.section__repair {
+  cursor: pointer;
+  flex: 1;
+}
+
+.section__repair.is-active {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.25);
+  z-index: 10;
+  border-radius: 20px;
+  transition: 1s;
+}
+
+.tab {
+  background-color: rgb(255, 255, 255);
+  display: none;
+}
+
+.tab.is-active {
+  display: block;
+}
+
+.tabs__content {
+  overflow-x: scroll;
+  max-height: 900px;
+  border-radius: 0 0 20px 20px;
+}
+
+.iphone {
+  max-width: 150px;
+}
+
+.iphone img {
+  border-radius: 20px;
+}
+
+.macbook img {
+  border-radius: 20px;
+}
+
+.watch {
+  max-width: 200px;
+}
+
+.watch img {
+  border-radius: 20px;
+}
+
+.ipad img {
+  border-radius: 20px;
+}
+
+.tabs-ihone-content {
+  padding-top: 20px;
+  display: flex;
+}
+
+.tabs-macbook-content {
+  padding-top: 20px;
+  display: flex;
+}
+
+.tab-iphone {
+  max-width: 200px;
+  width: 100%;
+}
+
+.link-tabs-iphone {
+  padding: 20px;
+}
+
+.link-tabs-iphone a {
+  font-weight: 500;
+  transition: 0.5s;
+  padding-right: 10px;
+  color: #000;
+}
+
+.link-tabs-iphone a:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+table.iksweb {
+  max-width: 900px;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  height: auto;
+}
+
+table.iksweb,
+table.iksweb td,
+table.iksweb th {
+  border: 1px solid #595959;
+}
+
+table.iksweb td,
+table.iksweb th {
+  min-height: 35px;
+  padding: 3px;
+  width: 30px;
+  height: 35px;
+}
+
+.title-img h3 {
+  max-width: 200px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.title-img img {
+  max-width: 200px;
+  width: 100%;
+  padding: 15px;
+}
+
+.applewatch-price .title-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.applewatch-price .title-img img {
+  max-width: 100px;
+}
+
+.section__help-repair {
+  text-align: center;
+}
+
+.section__help-repair h1 {
+  font-size: 30px;
+  font-weight: 500;
+  color: red;
+}
+
+.repair-nav-tabs {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.repair-nav-item {
+  border-radius: 20px;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  max-width: 200px;
+  width: 100%;
+}
+
+.repair-nav-item h4 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.repair-nav-item svg {
+  margin-top: 30px;
+  max-height: 50px;
+  width: 100%;
+  fill: red;
+  transition: 1s;
+}
+
+.repair-nav-item svg:hover {
+  fill: black;
+}
+
+.repair-nav-item:hover {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 14px 17px rgba(238, 9, 9, 0.25);
+}
+
+.repair-nav-item.active-help {
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 14px 17px rgba(238, 9, 9, 0.25);
+}
+
+.help-tab.active-help {
+  display: block;
+}
+
+.help-tab {
+  display: none;
+}
+
+.section__help-repair {
+  padding: 15px;
+  border-radius: 20px;
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.489);
+}
+
+.help-repair__content {
+  margin-top: 30px;
+}
+
+.tab-power a {
+  font-size: 18px;
+  color: blue;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.tab-power a:hover {
+  color: red;
+}
+
+.tab-power ul {
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.tab-power ul li {
+  list-style: inside;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.tab-power span {
+  display: block;
+  margin-top: 15px;
+  color: rgb(241, 67, 67);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tab-power p {
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.tab-power img {
+  padding: 10px 10px 10px 0;
+  max-width: 300px;
+  width: 100%;
+}
+
+.tab-power .infosupport {
+  min-width: 1000px;
+  width: 100%;
+}
+
+.tab-power .block-remoute-img p {
+  font-style: italic;
+  margin-top: -5px;
+}
+
+.tab-voda a,
+.tab-battery a,
+.tab-power a {
+  font-size: 18px;
+  color: blue;
+  transition: 0.5s;
+  font-weight: 600;
+}
+
+.tab-voda a:hover,
+.tab-battery a:hover,
+.tab-power a:hover {
+  color: red;
+}
+
+.tab-voda ul,
+.tab-battery ul,
+.tab-power ul {
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.tab-voda ul li,
+.tab-battery ul li,
+.tab-power ul li {
+  list-style: inside;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.tab-voda span,
+.tab-battery span,
+.tab-power span {
+  display: block;
+  margin-top: 15px;
+  color: rgb(241, 67, 67);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tab-voda p,
+.tab-battery p,
+.tab-power p {
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.tab-voda img,
+.tab-battery img,
+.tab-power img {
+  padding: 10px 10px 10px 0;
+  max-width: 300px;
+  width: 100%;
+}
+
+.tab-voda .block-remoute-img p,
+.tab-battery .block-remoute-img p,
+.tab-power .block-remoute-img p {
+  font-style: italic;
+  margin-top: -5px;
+}
+
+.tab-sete ul,
+.tab-steklo ul,
+.tab-volume ul {
+  padding-left: 30px;
+  padding-top: 15px;
+}
+
+.tab-sete ul li,
+.tab-steklo ul li,
+.tab-volume ul li {
+  list-style: inside;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.tab-sete span,
+.tab-steklo span,
+.tab-volume span {
+  display: block;
+  margin-top: 15px;
+  color: rgb(241, 67, 67);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.tab-sete p,
+.tab-steklo p,
+.tab-volume p {
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.tab-sete img,
+.tab-steklo img,
+.tab-volume img {
+  padding: 10px 10px 10px 0;
+  float: left;
+  max-width: 300px;
+  width: 100%;
+}
+
+.footer {
+  padding: 0 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background: rgba(171, 168, 168, 0.687);
+  box-shadow: 0px 4px 14px 17px rgba(118, 27, 145, 0.489);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  padding-top: 10px;
+  max-width: 150px;
+  width: 100%;
+  margin-right: 100px;
+  transition: 1s;
+}
+
+.footer-logo:hover {
+  transform: rotate(360deg);
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.footer-contact p {
+  max-width: 30px;
+  width: 100%;
+  margin-right: 10px;
+  transition: 1s;
+}
+
+.footer-contact p:hover {
+  max-width: 40px;
+}
+
+.footer-maps {
+  margin-top: 30px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-maps-info {
+  padding: 10px;
+}
+
+.footer-maps-info p {
+  font-weight: 500;
+}
+
+.whatsap {
+  margin-top: -10px;
+}
+
+.youtube {
+  max-width: 70px !important;
+}
+
+.youtube:hover {
+  max-width: 90px !important;
+}
+
+.phone {
+  transition: 1s;
+}
+
+.phone a {
+  font-size: 14px;
+  color: #000;
+  font-weight: 600;
+}
+
+.phone a:hover {
+  color: red;
+}
+
+iframe {
+  border-radius: 20px;
+  max-width: 600px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.up {
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 800;
+  position: fixed;
+  bottom: 25px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(94, 18, 111);
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  /* inherit font & color from ancestor */
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
+  text-align: inherit;
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+  /* for input */
+  -moz-appearance: none;
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Remove excess padding and border in Firefox 4+ */
+}
+
+.btn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+[class*=svg-] {
+  font-size: 20px;
+  position: relative;
+}
+
+[class*=svg-]:before {
+  content: "";
+  display: block;
+}
+
+[class*=svg-] svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-socials-facebook {
+  width: 1.2em;
+}
+
+.svg-socials-facebook:before {
+  padding-bottom: 100%;
+}
+
+.svg-socials-instagram {
+  width: 1.2em;
+}
+
+.svg-socials-instagram:before {
+  padding-bottom: 100%;
+}
+
+.svg-socials-twitter {
+  width: 1.2em;
+}
+
+.svg-socials-twitter:before {
+  padding-bottom: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .iphone {
+    min-width: 130px;
+  }
+
+  .macbook {
+    min-width: 400px;
+  }
+
+  .watch {
+    min-width: 160px;
+  }
+
+  .ipad {
+    min-width: 350px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .header__menu-list a {
+    font-size: 17px;
+  }
+
+  .iphone {
+    min-width: 100px;
+  }
+
+  .macbook {
+    min-width: 350px;
+  }
+
+  .watch {
+    min-width: 130px;
+  }
+
+  .ipad {
+    min-width: 300px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .main__slider {
+    display: none;
+  }
+
+  .text-about-apple {
+    max-width: 900px;
+    padding: 10px 40px 10px 40px;
+  }
+
+  .text-about-remont {
+    max-width: 900px;
+    padding: 10px 40px 10px 40px;
+  }
+
+  .text-about-ofice {
+    max-width: 900px;
+    padding: 10px 40px 10px 40px;
+  }
+
+  .tab-power .infosupport {
+    min-width: 400px;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .section__about-text {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .repair-iphone {
+    font-size: 25px;
+  }
+
+  .repair-mackboock {
+    font-size: 25px;
+  }
+
+  .repair-watch {
+    font-size: 25px;
+  }
+
+  .repair-ipad {
+    font-size: 25px;
+  }
+
+  .iphone {
+    min-width: 80px;
+  }
+
+  .macbook {
+    min-width: 300px;
+  }
+
+  .watch {
+    min-width: 100px;
+  }
+
+  .ipad {
+    min-width: 250px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .repair-iphone {
+    font-size: 20px;
+  }
+
+  .repair-mackboock {
+    font-size: 20px;
+  }
+
+  .repair-watch {
+    font-size: 20px;
+  }
+
+  .repair-ipad {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .repair {
+    max-width: 250px;
+    margin-top: 30px;
+    margin-left: 250px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .header__menu-list a {
+    font-size: 14px;
+  }
+
+  .repair-nav-tabs {
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
+
+  .repair-nav-item {
+    padding: 20px;
+  }
+
+  .repair-nav-item svg {
+    max-height: 40px;
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .swiper-slide img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .text-about-apple {
+    background: url(../../images/Apple-2-1.webp) 0 50%;
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+  }
+
+  .text-about-remont {
+    background: url(../../images/apple-lab-repair.png) 0 50%;
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+  }
+
+  .text-about-ofice {
+    background: url(../../images/efick.jpg);
+    background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000, -1px 0 1px #000, 0 -1px 1px #000;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .section__about-text {
+    display: none;
+  }
+
+  .button-service {
+    top: 0;
+    left: 27%;
+    width: 400px;
+    margin: 20px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .youtube {
+    min-width: 50px !important;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .header__logo {
+    margin-right: 50px;
+  }
+
+  .header__menu-list a {
+    font-size: 12px;
+  }
+
+  .repair {
+    max-width: 230px;
+    margin-top: 20px;
+  }
+
+  .iphone {
+    min-width: 60px;
+  }
+
+  .macbook {
+    min-width: 270px;
+  }
+
+  .watch {
+    min-width: 70px;
+  }
+
+  .ipad {
+    min-width: 220px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .repair-nav-item h4 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .iphone {
+    min-width: 50px;
+  }
+
+  .macbook {
+    min-width: 250px;
+  }
+
+  .watch {
+    min-width: 60px;
+  }
+
+  .ipad {
+    min-width: 180px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer-logo {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+
+  .footer-contact {
+    margin-right: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .repair-nav-tabs {
+    max-width: 430px;
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__logo {
+    margin-right: 25px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .iphone {
+    min-width: 40px;
+  }
+
+  .macbook {
+    min-width: 210px;
+  }
+
+  .macbook {
+    min-width: 180px;
+  }
+
+  .ipad {
+    min-width: 160px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .whatsap {
+    margin-top: -5px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .header__menu-list a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .ipad {
+    min-width: 140px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .facebook {
+    margin-top: -3px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .youtube {
+    min-width: 30px !important;
+  }
+
+  iframe {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .iphone {
+    min-width: 35px;
+  }
+
+  .macbook {
+    min-width: 160px;
+  }
+
+  .watch {
+    min-width: 50px;
+  }
+
+  .ipad {
+    min-width: 120px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer-line {
+    flex-direction: column;
+  }
+
+  .footer-contact {
+    margin-top: 15px;
+  }
+
+  .footer-maps {
+    padding: 0 20px;
+  }
+
+  .phone {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .repair-nav-item {
+    max-width: 160px;
+  }
+
+  .repair-nav-item svg {
+    max-height: 35px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .iphone {
+    min-width: 30px;
+  }
+
+  .macbook {
+    min-width: 140px;
+  }
+
+  .watch {
+    min-width: 40px;
+  }
+
+  .ipad {
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .tab-power .infosupport {
+    min-width: 350px;
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__menu-list a {
+    font-size: 6px;
+  }
+}
